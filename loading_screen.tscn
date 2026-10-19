@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dvim0wauaht0b"]
+
+[ext_resource type="Script" uid="uid://bi7rr5q2edi83" path="res://Script/loading_screen.gd" id="1_mggpi"]
+[ext_resource type="Texture2D" uid="uid://cl37exl0ewv4w" path="res://Resources/black bg.png" id="2_weff3"]
+[ext_resource type="Texture2D" uid="uid://dr7u1t0yi6sdb" path="res://Resources/maxell png.png" id="3_fgney"]
+
+[node name="Loading Screen" type="Node2D" unique_id=1404075351]
+script = ExtResource("1_mggpi")
+
+[node name="BlackBg" type="Sprite2D" parent="." unique_id=270136843]
+position = Vector2(573, 323.5)
+scale = Vector2(5.8, 3.2750003)
+texture = ExtResource("2_weff3")
+
+[node name="Label" type="Label" parent="." unique_id=1209897221]
+offset_left = 368.0
+offset_top = 314.0
+offset_right = 779.0
+offset_bottom = 369.0
+theme_override_font_sizes/font_size = 40
+text = "Loading in progress..."
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1123321220]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 253.0
+offset_top = 373.0
+offset_right = 896.0
+offset_bottom = 415.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MaxellPng" type="Sprite2D" parent="." unique_id=444103718]
+position = Vector2(568, 223)
+texture = ExtResource("3_fgney")

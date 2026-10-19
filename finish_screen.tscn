@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cxwfrigvqmh1s"]
+
+[ext_resource type="Texture2D" uid="uid://cl37exl0ewv4w" path="res://Resources/black bg.png" id="1_1hva1"]
+[ext_resource type="Texture2D" uid="uid://dr7u1t0yi6sdb" path="res://Resources/maxell png.png" id="2_tiyjm"]
+[ext_resource type="Texture2D" uid="uid://dx3vh4o3umrp6" path="res://Resources/fish png.png" id="3_nm4bm"]
+
+[node name="Finish Screen" type="Node2D" unique_id=891876025]
+
+[node name="BlackBg" type="Sprite2D" parent="." unique_id=1796886893]
+position = Vector2(576.50006, 328.00003)
+scale = Vector2(5.8250003, 3.2700005)
+texture = ExtResource("1_1hva1")
+
+[node name="MaxellPng" type="Sprite2D" parent="." unique_id=1325566796]
+position = Vector2(551, 377)
+scale = Vector2(1.6633333, 1.5945274)
+texture = ExtResource("2_tiyjm")
+
+[node name="FishPng" type="Sprite2D" parent="." unique_id=320474545]
+position = Vector2(760, 469)
+texture = ExtResource("3_nm4bm")
+
+[node name="FishPng4" type="Sprite2D" parent="." unique_id=1211341354]
+position = Vector2(305, 447)
+rotation = 3.1415927
+scale = Vector2(1.0898966, -1.075202)
+texture = ExtResource("3_nm4bm")
+
+[node name="FishPng2" type="Sprite2D" parent="." unique_id=1908566163]
+position = Vector2(404.86157, 485.41528)
+scale = Vector2(-1.2091565, 1.2009643)
+texture = ExtResource("3_nm4bm")
+
+[node name="FishPng3" type="Sprite2D" parent="." unique_id=1605345403]
+position = Vector2(631, 497)
+texture = ExtResource("3_nm4bm")
+
+[node name="Label" type="Label" parent="." unique_id=1195835620]
+offset_left = 392.0
+offset_top = 97.0
+offset_right = 710.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 40
+text = "You made it out!"
+
+[node name="Label2" type="Label" parent="." unique_id=2130898546]
+offset_left = 499.0
+offset_top = 155.0
+offset_right = 603.0
+offset_bottom = 183.0
+theme_override_font_sizes/font_size = 20
+text = "(for now...)"

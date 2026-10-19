@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://craokffyo3r85"]
+
+[ext_resource type="Texture2D" uid="uid://ceaune64corld" path="res://Resources/dungeon door.webp" id="1_5i01k"]
+[ext_resource type="Script" uid="uid://cw0wprsdc6j14" path="res://Script/portal_2.gd" id="1_peb1k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(136.25, 252)
+
+[node name="Portal2" type="Area2D" unique_id=770764559]
+script = ExtResource("1_peb1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1055143625]
+position = Vector2(3, -9)
+scale = Vector2(0.3484043, 0.33673468)
+texture = ExtResource("1_5i01k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1355177272]
+position = Vector2(-50.875, 0)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="Destination 2" type="Marker2D" parent="." unique_id=1142067761]
+position = Vector2(202, 18)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
